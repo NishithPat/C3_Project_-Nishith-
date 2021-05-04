@@ -67,8 +67,8 @@ class RestaurantTest {
     //>>>>>>>>>>>>>>>>>>>>>>ORDER VALUE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
      @Test
     public void orderCost_method_should_return_the_cost_of_selected_items() {
-        int item1cost = 119;
-        int item2cost = 269;
+        int item1cost = restaurant.getMenu().get(0).getPrice();
+        int item2cost = restaurant.getMenu().get(1).getPrice();
         int expectedCost = item1cost + item2cost;
         
         int actualCost = restaurant.orderCost("Sweet corn soup", "Vegetable lasagne");
