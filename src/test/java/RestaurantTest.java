@@ -64,4 +64,17 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //>>>>>>>>>>>>>>>>>>>>>>ORDER VALUE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+     @Test
+    public void orderCost_method_should_return_the_cost_of_selected_items() {
+        int item1cost = 119;
+        int item2cost = 269;
+        int expectedCost = item1cost + item2cost;
+
+        int actualCost = restaurant.orderCost("Sweet corn soup", "Vegetable lasagne");
+            
+        assertEquals(expectedCost, actualCost);
+    }
+    //<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 }
