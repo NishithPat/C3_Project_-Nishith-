@@ -70,9 +70,9 @@ class RestaurantTest {
         int item1cost = 119;
         int item2cost = 269;
         int expectedCost = item1cost + item2cost;
-
+        
         int actualCost = restaurant.orderCost("Sweet corn soup", "Vegetable lasagne");
-            
+    
         assertEquals(expectedCost, actualCost);
     }
     //<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>
